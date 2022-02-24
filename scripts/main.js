@@ -33,7 +33,7 @@ function populateSubscriptions(subscriptions) {
     return `
            <li class="menu-group__item">
                 <a href="${subscription.link}" class="menu-group__link">
-                <img class="menu-group__icon menu-group__icon--image" src="${subscription.thumb}">
+                <img class="menu-group__icon menu-group__icon--image" src="${subscription.thumb}" referrerpolicy="no-referrer">
                 <span class="menu-group__text">
                     ${subscription.name}
                 </span> 
@@ -51,9 +51,9 @@ function populateMainBanner(mainBanner) {
   bannerSection.insertAdjacentHTML(
     "beforeend",
     `
-        <img class="banner__image" src="${mainBanner.url}" alt="Tu contenido favorito, sin publicidad">
+        <img class="banner__image" src="${mainBanner.url}" alt="Tu contenido favorito, sin publicidad" referrerpolicy="no-referrer">
         <div class="banner__info">
-        <img class="banner__image" src="${mainBanner.logo}" alt="Youtube Premiums">
+        <img class="banner__image" src="${mainBanner.logo}" alt="Youtube Premiums" referrerpolicy="no-referrer">
           <h2 class="banner__title">
             ${mainBanner.title}
           </h2>
@@ -106,14 +106,14 @@ function populateVideos(videos) {
             <li class="gallery__item">
                 <div class="gallery-video">
                 <div class="gallery-video__thumb">
-                    <img src="${video.thumb}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit" class="gallery-video__image">
+                    <img src="${video.thumb}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit" class="gallery-video__image" referrerpolicy="no-referrer">
                     <span class="gallery-video__time">
                     ${time.minutes}:${time.seconds}
                     </span>
                 </div>
                 <div class="gallery-video__info">
                     <div class="gallery-video__block--left">
-                    <img src="./assets/images/video-user-avatar.png" alt="John Doe" class="gallery-video__avatar">
+                    <img src="./assets/images/video-user-avatar.png" alt="John Doe" class="gallery-video__avatar" referrerpolicy="no-referrer">
                     </div>
                     <div class="gallery-video__block--right">
                     <span class="gallery-video__name">
